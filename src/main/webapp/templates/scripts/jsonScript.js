@@ -1,11 +1,15 @@
 
 
-$(document).ready( function () {
-    var table = $('#example').DataTable()( {
+$(document).ready(function() {
+
+    // Salvataggio dati
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
         buttons: [
-            'copy', 'excel', 'pdf'
+            'copyHtml5',
+            'excelHtml5',
+            'csvHtml5',
+            'pdfHtml5'
         ]
     } );
-    table.buttons().container()
-        .appendTo( $('.col-sm-6:eq(0)', table.table().container() ) );
 } );
