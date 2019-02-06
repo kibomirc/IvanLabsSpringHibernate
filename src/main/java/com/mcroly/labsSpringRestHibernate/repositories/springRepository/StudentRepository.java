@@ -1,7 +1,7 @@
 
-package com.mcroly.labs.repositories.springRepository;
+package com.mcroly.labsSpringRestHibernate.repositories.springRepository;
 
-import com.mcroly.labs.model.Student;
+import com.mcroly.labsSpringRestHibernate.model.Student;
 import org.springframework.data.repository.CrudRepository;
 
 

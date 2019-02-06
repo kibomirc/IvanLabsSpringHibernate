@@ -1,18 +1,13 @@
-package com.mcroly.labs.dao;
+package com.mcroly.labsSpringRestHibernate.dao;
 
-import com.mcroly.labs.model.Materia;
-import com.mcroly.labs.model.Student;
-import com.mcroly.labs.model.Telefono;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
+import com.mcroly.labsSpringRestHibernate.model.Materia;
+import com.mcroly.labsSpringRestHibernate.model.Student;
+import com.mcroly.labsSpringRestHibernate.model.Telefono;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.persistence.PersistenceContextType;
-import java.util.ArrayList;
-import java.util.List;
 
 @Repository
 public class StudentDaoImpl {

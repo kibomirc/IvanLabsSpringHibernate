@@ -1,4 +1,4 @@
-package com.mcroly.labs.model;
+package com.mcroly.labsSpringRestHibernate.model;
 
 import javax.persistence.*;
 import java.util.ArrayList;

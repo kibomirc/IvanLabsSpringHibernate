@@ -1,4 +1,4 @@
-package com.mcroly.labs;
+package com.mcroly.labsSpringRestHibernate;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

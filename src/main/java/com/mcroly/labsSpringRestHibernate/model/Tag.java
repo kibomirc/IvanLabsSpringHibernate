@@ -1,4 +1,4 @@
-package com.mcroly.labs.model;
+package com.mcroly.labsSpringRestHibernate.model;
 
 /*
  * Copyright 2012-2017 the original author or authors.
@@ -16,7 +16,6 @@ package com.mcroly.labs.model;
  * limitations under the License.
  */
 
-
 import java.util.List;
 
 import javax.persistence.Entity;
@@ -26,19 +25,17 @@ import javax.persistence.ManyToMany;
 import javax.persistence.SequenceGenerator;
 
 @Entity
-public class Note {
+public class Tag {
 
     @Id
-    @SequenceGenerator(name = "note_generator", sequenceName = "note_sequence", initialValue = 5)
-    @GeneratedValue(generator = "note_generator")
+    @SequenceGenerator(name = "tag_generator", sequenceName = "tag_sequence", initialValue = 4)
+    @GeneratedValue(generator = "tag_generator")
     private long id;
 
-    private String title;
+    private String name;
 
-    private String body;
-
-    @ManyToMany
-    private List<Tag> tags;
+    @ManyToMany(mappedBy = "tags")
+    private List<Note> notes;
 
     public long getId() {
         return this.id;
@@ -48,28 +45,20 @@ public class Note {
         this.id = id;
     }
 
-    public String getTitle() {
-        return this.title;
+    public String getName() {
+        return this.name;
     }
 
-    public void setTitle(String title) {
-        this.title = title;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getBody() {
-        return this.body;
+    public List<Note> getNotes() {
+        return this.notes;
     }
 
-    public void setBody(String body) {
-        this.body = body;
-    }
-
-    public List<Tag> getTags() {
-        return this.tags;
-    }
-
-    public void setTags(List<Tag> tags) {
-        this.tags = tags;
+    public void setNotes(List<Note> notes) {
+        this.notes = notes;
     }
 
 }

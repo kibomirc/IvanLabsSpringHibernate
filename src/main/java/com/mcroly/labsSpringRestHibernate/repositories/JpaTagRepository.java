@@ -1,11 +1,11 @@
-package com.mcroly.labs.repositories;
+package com.mcroly.labsSpringRestHibernate.repositories;
 
 import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 
-import com.mcroly.labs.model.Tag;
+import com.mcroly.labsSpringRestHibernate.model.Tag;
 
 import org.springframework.stereotype.Repository;
 

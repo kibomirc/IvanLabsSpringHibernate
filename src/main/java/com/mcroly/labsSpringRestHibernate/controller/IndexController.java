@@ -1,21 +1,15 @@
-package com.mcroly.labs.controller;
+package com.mcroly.labsSpringRestHibernate.controller;
 
-import com.mcroly.labs.model.Note;
-import com.mcroly.labs.model.Student;
-import com.mcroly.labs.repositories.NoteRepository;
-import com.mcroly.labs.service.StudentServiceImpl;
+import com.mcroly.labsSpringRestHibernate.model.Student;
+import com.mcroly.labsSpringRestHibernate.repositories.NoteRepository;
+import com.mcroly.labsSpringRestHibernate.service.StudentServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
 import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
-import java.util.List;
 
 @RestController
 public class IndexController {
