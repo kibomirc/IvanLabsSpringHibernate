@@ -1,6 +1,8 @@
 package com.mcroly.labs.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
 @Table(name = "Materia")
@@ -17,6 +19,7 @@ public class Materia {
     @OneToOne(fetch = FetchType.LAZY, cascade=CascadeType.ALL,
             mappedBy = "mat")
     private Student student;
+
 
     public Long getId() {
         return id;
