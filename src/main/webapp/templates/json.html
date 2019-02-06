@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.js"></script>
+<script type="text/javascript" charset="utf8" src="/templates/scripts/jsonScript.js"></script>
+<head>
+    <title>Pagina dei saluti</title>
+</head>
+<body>
+
+<h1>prova stampa json template<span th:text="${student.name}"></span></h1>
+
+<table id="example" class="display" style="width:100%">
+    <thead>
+    <th:block th:each="student : ${student}">
+        <tr>
+            <td th:text="${student.name}">...</td>
+            <td th:text="${student.passportNumber}">...</td>
+        </tr>
+    </th:block>
+    </thead>
+</table>
+
+
+
+</body>
+</html>
