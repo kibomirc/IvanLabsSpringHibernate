@@ -1,0 +1,23 @@
+
+#example {
+    margin-bottom:50px;
+    margin-top:20px;
+}
+
+.dt-buttons {
+    margin-bottom: 30px;
+}
+
+.dt-buttons {
+    margin-bottom: 30px;
+}
+
+#example_filter {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -100px;
+}
