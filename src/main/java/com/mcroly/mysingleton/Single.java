@@ -17,7 +17,7 @@ public class Single {
     // lazy
     public static Single getInstance() {
         if(sc==null) {
-            return sc;
+            return sc;//
         }
 
         return sc;
