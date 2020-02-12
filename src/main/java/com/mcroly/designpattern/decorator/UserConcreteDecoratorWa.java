@@ -1,4 +1,4 @@
-package com.mcroly.designpatter.decorator;
+package com.mcroly.designpattern.decorator;
 
 public class UserConcreteDecoratorWa extends UserDecorator {
 

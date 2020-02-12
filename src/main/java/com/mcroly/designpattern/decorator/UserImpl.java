@@ -1,4 +1,4 @@
-package com.mcroly.designpatter.decorator;
+package com.mcroly.designpattern.decorator;
 
 class UserImpl implements User {
 
