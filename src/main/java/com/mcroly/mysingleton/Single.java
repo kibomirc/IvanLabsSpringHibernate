@@ -19,7 +19,6 @@ public class Single {
         if(sc==null) {
             return sc;
         }
-
         return sc;
     }
 }
