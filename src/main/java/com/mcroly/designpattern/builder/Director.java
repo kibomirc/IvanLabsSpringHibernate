@@ -8,6 +8,10 @@ public class Director {
 		this.persona = p;
 	}
 	
+	public void setBuilder(InterfaceBuilder p) {
+		this.persona = p;
+	}
+	
 	public void makePersona() {
 		persona.buildName();
 		persona.buildSurname();
