@@ -10,11 +10,7 @@ public class UserConcreteDecoratorFacebook extends UserDecorator {
 
     @Override
     public String getNickname() {
-    	printFb();
-        return user.getNickname() + "ed è iscritta a " + chat;
-    }
-    
-    private void printFb() {
-    	System.out.println("Account Facebook : Anonimo");
+    	System.out.println("Account Facebook : Anonimo"); // LIFO
+        return user.getNickname() + "ed è iscritta a " + chat; // user.getNickname => FIFO
     }
 }

@@ -14,12 +14,8 @@ public class UserConcreteDecoratorWa extends UserDecorator {
 
     @Override
     public String getNickname() {
-    	printWa(numero);
-        return user.getNickname() + "ed è iscritta a " + chat;
-    }
-    
-    private void printWa(String numero) {
     	System.out.println("Stampo numero " + numero);
+        return user.getNickname() + "ed è iscritta a " + chat;
     }
 
 }
